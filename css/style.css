@@ -83,36 +83,47 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-body {
-  background: black;
-}
 
-section {
+  
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
   display: flex;
   flex-direction: column;
-  background: yellow;
-  gap: 10px;
-  align-items: center;
-  height: 100vh;
-
-  justify-content: space-around;
+  height: 100%;
+}
+html {
+  height: 100%;
+}
+body > div {
+  background-image: url("../GFX/VNIWN7WKSQ.jpg");
+  flex: 1 10px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  flex-direction: row;
+}
+nav{
+  
 }
 
-div {
-  flex: 0 10vw;
-  border: 1px solid white;
-  background: purple;
+main{
+
+}
+
+
+
+footer{
+  background-color: aliceblue;
+  color: black;
   text-align: center;
-  color: white;
-  width: 50vw;
-
 }
 
-/*
-div:nth-child(2n+1) {
-  flex: 2;
-}
-*/
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
