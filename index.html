@@ -20,6 +20,7 @@
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
+  <script src="js/app.js"></script> 
 
   <link rel="icon" href="/ski.png" type="image/png">
 
@@ -31,14 +32,14 @@
 <body>
   <div class="top">
     <div>
-      <input type="radio" class="one" name="menu"><p>HOME</p></input>
-      <input type="radio" class="two" name="menu"><p>HOME</p></input>
-      <input type="radio" class="three" name="menu"><p>HOME</p></input>
+      <input type="radio" class="one" id="radioMenu1" name="menu" onclick="unCheck()">
+      <input type="radio" class="two" id="radioMenu2" name="menu" onclick="unCheck()">
+      <input type="radio" class="three" id="radioMenu3" name="menu" onclick="unCheck()">
     </div>
   </div>
   <header>
     <div class="offset">
-      <input class="menu" type="checkbox"></input>
+      <input class="menu" type="checkbox" id="checkboxMenu">
     </div>
     <h1>Top-Down</h1>
     <div class="offset"></div>

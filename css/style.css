@@ -112,7 +112,7 @@ header{
 h1 {
   text-align: center;
   flex: 1;
-  font-size: 5vw;
+  font-size: 4.5vw;
   font-family: "Luckiest Guy";
   font-weight: 400;
 }
@@ -135,9 +135,7 @@ input[type='checkbox']:checked.menu{
 
 div.top div{
   position: absolute;
-  transform-origin: 4vh center;
-  height: 100%;
-  height: 7vh;
+  transform-origin: 4vh 4vh;
   transform: rotateZ(-90deg);
   transition: 1s;
   display: flex;
@@ -145,7 +143,8 @@ div.top div{
   gap: 0;
 }
 
-input[type='radio'].one{
+input[type='radio']{
+  -webkit-appearance:none;
   position: relative;
   left: 1vh;
   background-color: #999;
@@ -153,23 +152,22 @@ input[type='radio'].one{
   transform-origin: center;
   text-align: center;
   padding: 0.5vh;
-
+  height: 7vh;
+  width: 7vh;
+  background-position: center;
+  background-size:80%;
+  background-repeat: no-repeat;
 }
 
 .one{
-  position: relative;
-  left: 1vw;
-  top: 10vh;
+  top: 8vh;
+  background-image: url(../GFX/home.png) !important;
 }
 .two{
-  position: relative;
-  left: 1vw;
-  top: 20vh;
+  top: 9vh;
 }
 .three{
-  position: relative;
-  left: 1vw;
-  top: 30vh;
+  top: 10vh;
 }
 
 
