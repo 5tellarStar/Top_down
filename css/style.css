@@ -94,6 +94,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%;
+  background-color: aliceblue;
 }
 html {
   height: 100%;
@@ -102,31 +103,28 @@ html {
 header{
   position: absolute;
   top: 0px;
-  background-color: aliceblue;
+  background-color: #c3ddfc;
   display: flex;
   flex-direction: row;
-  height: 8vh;
+  height: 9vh;
   align-items: center;
   width: 100%;
 }
 h1 {
   text-align: center;
   flex: 1;
-  font-size: 4.5vw;
-  font-family: "Luckiest Guy";
-  font-weight: 400;
+  font-size: 5vw;
+  font-family: "iceberg";
+  font-weight: 700;
 }
 .offset {
   flex: 1;
   width: 7vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
 }
-nav {
-  height: 7vh;
-  margin-top: 0.5vh;
-  transform: rotateZ(0);
-  transform-origin: 3.5vh center;
-  transition: 0.5s;
-}
+
 
 input[type='checkbox']:checked.menu{
   transform: rotateZ(90deg);
@@ -160,15 +158,15 @@ input[type='radio']{
 }
 
 input.home{
-  top: 8vh;
+  top: 10vh;
   background-image: url(../GFX/home.png) !important;
 }
 input.info{
   background-image: url(../GFX/info.png) !important;
-  top: 9vh;
+  top: 11vh;
 }
 input.booking{
-  top: 10vh;
+  top: 12vh;
   background-image: url(../GFX/booking.png) !important;
 }
 
@@ -202,14 +200,10 @@ input[type='checkbox'].menu {
 }
 
 .content {
-  background-image: url("../GFX/VNIWN7WKSQ.jpg");
   flex: 1 10px;
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position: top;
   display: flex;
   flex-direction: row;
-  margin-top: 8vh;
+  margin-top: 9vh;
 }
 aside {
   flex: 1;
@@ -236,8 +230,27 @@ main div{
 }
 
 main{
-  margin-top: 1vh;
+  padding-top: 1vh;
+  padding-left: 0.5vw;
+  padding-right: 0.5vw;
   flex: 3;
+  background-image: url("../GFX/VNIWN7WKSQ.jpg");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.home > p {
+  font-size: 3vh;
+  font-family: "iceberg";
+}
+
+p.sledCrash {
+  font-size: 5vh !important;
+}
+
+img.sledCrash {
+  height: 20vh;
 }
 
 aside{
@@ -256,6 +269,21 @@ aside > img {
   width: 100%;
 }
 
+@media screen and (max-width: 479px){
+  aside {
+    display: none;
+  }
+  body {
+    background-color: #000;
+  }
+  .home > p {
+    padding: 1vw;
+  }
+  h1 {
+    font-size: 13vw;
+    flex: 3;
+  }
+}
 
 /* ==========================================================================
    Helper classes
