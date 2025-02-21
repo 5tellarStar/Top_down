@@ -240,6 +240,23 @@ main{
   background-position: top;
 }
 
+select:has(option[value="1"]:checked) ~ div.Hyra
+{
+  background-color: #000;
+  height: 100%;
+  width: 100%;
+}
+select:has(option[value="2"]:checked) ~ div.Rodel
+{
+  background-color: blue;
+  height: 100%;
+  width: 100%;
+}
+div.booking div{
+  width: 0;
+  height: 0;
+}
+
 .home > p {
   font-size: 3vh;
   font-family: "iceberg";
